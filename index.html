@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Turbo Wash Angola</title>
+  <style>
+    body {
+    margin: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #000;
+    color: #fff;
+    scroll-behavior: smooth;
+    }
+    
+    header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(17, 17, 17, 0.95);
+    color: #ffd700;
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+    
+    header h1 {
+    margin: 0;
+    font-size: 1.3rem;
+    }
+    
+    header nav a {
+    color: #ffd700;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    }
+    
+    header nav a:hover {
+    color: #fff;
+    }
+    
+    .banner {
+    background: url("https://images.unsplash.com/photo-1615757874798-4af0d5b6c39c")
+      no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+    }
+    
+    .banner h1 {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 15px;
+    color: #ffd700;
+    font-size: 2rem;
+    animation: slideUp 2s ease-in-out;
+    }
+    
+    section {
+    padding: 60px 20px;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+    }
+    
+    h2 {
+    color: #ffd700;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    position: relative;
+    }
+    
+    h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #ffd700;
+    margin: 10px auto;
+    border-radius: 2px;
+    }
+    
+    .services,
+    .gallery,
+    .pricing {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+    }
+    
+    .card {
+    background: #111;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 25px rgba(255, 215, 0, 0.6);
+    }
+    
+    table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+    }
+    
+    th,
+    td {
+    border: 1px solid #ffd700;
+    padding: 12px;
+    text-align: center;
+    }
+    
+    th {
+    background: #ffd700;
+    color: #000;
+    }
+    
+    footer {
+    background: #111;
+    padding: 25px;
+    text-align: center;
+    color: #ffd700;
+    margin-top: 40px;
+    }
+    
+    .whatsapp-btn {
+    display: inline-block;
+    background: #25d366;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    margin-top: 20px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+    }
+    
+    .whatsapp-btn:hover {
+    background: #1ebe5a;
+    }
+    
+    /* Animações */
+    @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    
+    to {
+      opacity: 1;
+    }
+    }
+    
+    @keyframes slideUp {
+    from {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    }
+
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>🚗 Turbo Wash Angola</h1>
+    <nav> 
+      <a href="#home">Início</a> 
+      <a href="#servicos">Serviços</a> 
+      <a href="#precos">Preços</a> 
+      <a href="#contactos">Contactos</a> 
+    </nav>
+  </header>
+  <div class="banner" id="home">
+    <h1>"Limpeza que brilha, onde você estiver"</h1>
+  </div>
+  <section id="servicos">
+    <h2>✨Serviços</h2>
+    <div class="services">
+      <div class="card">🚗 Lavagem Automotiva ao Domicílio</div>
+      <div class="card">🧼 Limpeza de Janelas e Vidros</div>
+      <div class="card">🏗️ Limpeza Pós-Obra</div>
+      <div class="card">🧽 Lavagem de Tapetes</div>
+      <div class="card">🚛 Lavagem de Veículos Pesados</div>
+    </div>
+  </section>
+  <section id="precos">
+    <h2>💰 Pacotes Turbo Wash</h2>
+    <table>
+      <tr>
+        <th>Pacote</th>
+        <th>Inclui</th>
+        <th>Preço</th>
+      </tr>
+      <tr>
+        <td><strong> Ligeiro Básico 🚗</strong></td>
+        <td>Lavagem simples de carro + Interior básico</td>
+        <td>2.100 Kz</td>
+      </tr>
+      <tr>
+        <td><strong>Standard ✨</strong></td>
+        <td>Lavagem completa + Aspiração + Limpeza de vidros</td>
+        <td>4.100 Kz</td>
+      </tr>
+      <tr>
+        <td><strong>Vidros 🪟</strong></td>
+        <td>Limpeza de vidros (preço base)</td>
+        <td>750 Kz</td>
+      </tr>
+      <tr>
+        <td><strong>Pesados 🚛</strong></td>
+        <td>Lavagem alta pressão + Higienização interior (a partir de)</td>
+        <td>6.300 Kz</td>
+      </tr>
+      <tr>
+        <td><strong>Tapetes 🧽</strong></td>
+        <td>Lavagem alta pressão + Higienização + Aromatização (preço variável)</td>
+        <td>1.950 Kz</td>
+      </tr>
+      <tr>
+        <td><strong>Pós-Obra 🏗️</strong></td>
+        <td>Lavadora de alta pressão + Detergentes + Limpador para vidros (a partir de)</td>
+        <td>11.350 Kz</td>
+      </tr>
+    </table>
+  </section>
+  <section id="INF">
+    <h2>ℹ️ Informações Adicionais</h2>
+    <div class="gallery">
+      <div class="card">🔧 Equipamentos de Alta Pressão</div>
+      <div class="card">🧴 Produtos Específicos</div>
+      <div class="card">📊 Preços Ajustados à Demanda</div>
+    </div>
+  </section>
+  <section id="contactos">
+    <h2>📞 Contactos</h2>
+    <p>📍 Benfica – Distrito do Patriota (Bairro Honga)</p>
+    <p>📱 922 696 069 / 932 010 727</p> <a href="https://wa.me/24432010727" class="whatsapp-btn">💬 Fale no WhatsApp</a>
+  </section>
+  <footer> © 2025 Turbo Wash Angola – Todos os direitos reservados </footer>
+</body>
+
+</html>
